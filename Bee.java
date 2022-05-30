@@ -51,6 +51,7 @@ public class Bee extends Actor
             removeTouching(Strawberry.class);
             MyWorld world =(MyWorld) getWorld();
             world.Strawberry();
+            world.increaseScore();
         }
     }
     
