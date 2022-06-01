@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Bee extends Actor
 {
+    GreenfootSound beeSound = new GreenfootSound("BeeBuzz.mp3");
     /**
      * Act - do whatever the Bee wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -15,8 +16,8 @@ public class Bee extends Actor
     public void act()
     {
         // Add your action code here.
-        mover();
-        
+         mover();
+         
         
     
     } 
@@ -52,6 +53,7 @@ public class Bee extends Actor
             MyWorld world =(MyWorld) getWorld();
             world.Strawberry();
             world.increaseScore();
+            beeSound.play();
         }
     }
     
